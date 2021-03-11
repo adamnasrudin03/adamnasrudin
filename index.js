@@ -12,7 +12,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 const PORT = process.env.PORT || 8080;
-const MONGODB_URI = process.env.MONGODB_URI;
+const MONGODB_URI =
+  process.env.MONGODB_URI || "mongodb://localhost:27017/adamnasrudin";
 db.mongoose
   .connect(MONGODB_URI)
   .then(() => {
