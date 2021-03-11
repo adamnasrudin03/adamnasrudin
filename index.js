@@ -12,8 +12,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 const PORT = process.env.PORT || 8080;
+const MONGODB_URI = process.env.MONGODB_URI;
 db.mongoose
-  .connect("mongodb://localhost:27017/adamnasrudin")
+  .connect(MONGODB_URI)
   .then(() => {
     app.listen(PORT, () =>
       console.log(`Connection Success", Server is running on port ${PORT}.`)
