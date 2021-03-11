@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "d03d203b-9911-4089-a4b6-878e419796b5",
+		"name": "heroku backend_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"account_number\": \"11032021\",\n    \"identity_number\": \"3275060309090099199\",\n    \"username\": \"adamnasrudin\",\n    \"email_address\": \"adamnasrudi1n@gmail.com\",\n    \"password\": \"password\"\n}"
+						},
+						"url": {
+							"raw": "https://adamnasrudin.herokuapp.com/api/v1/auth/register",
+							"protocol": "https",
+							"host": [
+								"adamnasrudin",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"register"
+							]
+						},
+						"description": "{\n\"npm\" : 18171065002,\n\"name\" : \"Adam Nasrudin\",\n\"gender\" : \"Laki - laki\",\n\"address\" : \" bekasi\"\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email_address\": \"adamnasrudi1n@gmail.com\",\n    \"password\": \"password\"\n}"
+						},
+						"url": {
+							"raw": "https://adamnasrudin.herokuapp.com/api/v1/auth/login",
+							"protocol": "https",
+							"host": [
+								"adamnasrudin",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						},
+						"description": "{\n\"npm\" : 18171065002,\n\"name\" : \"Adam Nasrudin\",\n\"gender\" : \"Laki - laki\",\n\"address\" : \" bekasi\"\n}"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "List users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNDliZmVlMGI4MjNjMDAxNTE4ZmYzYiIsImlhdCI6MTYxNTQ0ODA1MCwiZXhwIjoxNjE1NTM0NDUwfQ.wmG96myKA54sIgAYMaapeIvSChsIFFhcfwEpOcQt7rs"
+					}
+				],
+				"url": {
+					"raw": "https://adamnasrudin.herokuapp.com/api/v1/users",
+					"protocol": "https",
+					"host": [
+						"adamnasrudin",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					],
+					"query": [
+						{
+							"key": "account_number",
+							"value": "111",
+							"disabled": true
+						},
+						{
+							"key": "identity_number",
+							"value": "333",
+							"disabled": true
+						}
+					]
+				},
+				"description": "{\n\"npm\" : 18171065002,\n\"name\" : \"Adam Nasrudin\",\n\"gender\" : \"Laki - laki\",\n\"address\" : \" bekasi\"\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNDk3Yzg0M2RkZDQ5MzczY2JmOTI0ZSIsImlhdCI6MTYxNTQzNDEzMCwiZXhwIjoxNjE1NTIwNTMwfQ.mDycDc4Sf4gJ0blbn5-iR4EcvuEZBUwnraZse6inZsE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"account_number\": \"1233\",\n    \"identity_number\": \"327s506\",\n    \"username\": \"Adam ajah\",\n    \"email_address\": \"adam@gmail.com\",\n    \"password\": \"password\"\n}"
+				},
+				"url": {
+					"raw": "https://adamnasrudin.herokuapp.com/api/v1/users/6049bfee0b823c001518ff3b/update",
+					"protocol": "https",
+					"host": [
+						"adamnasrudin",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"6049bfee0b823c001518ff3b",
+						"update"
+					]
+				},
+				"description": "{\n\"npm\" : 18171065002,\n\"name\" : \"Adam Nasrudin\",\n\"gender\" : \"Laki - laki\",\n\"address\" : \" bekasi\"\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNDk3Yzg0M2RkZDQ5MzczY2JmOTI0ZSIsImlhdCI6MTYxNTQzNDEzMCwiZXhwIjoxNjE1NTIwNTMwfQ.mDycDc4Sf4gJ0blbn5-iR4EcvuEZBUwnraZse6inZsE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://adamnasrudin.herokuapp.com/\\/api/v1/users/60497c843ddd49373cbf924e/delete",
+					"protocol": "https",
+					"host": [
+						"adamnasrudin",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"",
+						"",
+						"api",
+						"v1",
+						"users",
+						"60497c843ddd49373cbf924e",
+						"delete"
+					]
+				},
+				"description": "{\n\"npm\" : 18171065002,\n\"name\" : \"Adam Nasrudin\",\n\"gender\" : \"Laki - laki\",\n\"address\" : \" bekasi\"\n}"
+			},
+			"response": []
+		},
+		{
+			"name": "user detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNDk3Yzg0M2RkZDQ5MzczY2JmOTI0ZSIsImlhdCI6MTYxNTQzNDEzMCwiZXhwIjoxNjE1NTIwNTMwfQ.mDycDc4Sf4gJ0blbn5-iR4EcvuEZBUwnraZse6inZsE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://adamnasrudin.herokuapp.com/api/v1/users/6049bfee0b823c001518ff3b",
+					"protocol": "https",
+					"host": [
+						"adamnasrudin",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"6049bfee0b823c001518ff3b"
+					]
+				},
+				"description": "{\n\"npm\" : 18171065002,\n\"name\" : \"Adam Nasrudin\",\n\"gender\" : \"Laki - laki\",\n\"address\" : \" bekasi\"\n}"
+			},
+			"response": []
+		}
+	]
+}
