@@ -122,8 +122,8 @@ exports.updateById = (req, res) => {
 
       post.accountNumber = req.body.account_number;
       post.identityNumber = req.body.identity_number;
-      post.username = req.body.username;
-      post.email = req.body.email_address;
+      post.userName = req.body.username;
+      post.emailAddress = req.body.email_address;
       post.password = bcrypt.hashSync(req.body.password, 8);
 
       return post.save((err, user) => {
