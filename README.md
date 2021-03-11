@@ -108,7 +108,6 @@ Response:
             "identityNumber": "3275060309090099199",
             "userName": "adamnasrudin",
             "emailAddress": "adamnasrudin@gmail.com",
-            "password": " ",
             "createdAt": "2021-03-11T05:21:00.095Z",
             "updatedAt": "2021-03-11T05:21:00.095Z",
             "__v": 0
@@ -119,7 +118,6 @@ Response:
             "identityNumber": "327s506",
             "userName": "adamnasrudin",
             "emailAddress": "adamnasrudi1n@gmail.com",
-            "password": " ",
             "createdAt": "2021-03-11T06:59:58.673Z",
             "updatedAt": "2021-03-11T07:36:05.650Z",
             "__v": 0
@@ -130,7 +128,6 @@ Response:
             "identityNumber": "327506030909002121",
             "userName": "adamcodeid",
             "emailAddress": "adamcodeid@gmail.com",
-            "password": " ",
             "createdAt": "2021-03-11T09:54:10.335Z",
             "updatedAt": "2021-03-11T09:54:10.335Z",
             "__v": 0

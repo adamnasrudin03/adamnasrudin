@@ -30,29 +30,18 @@ exports.findAll = (req, res, next) => {
         .limit(parseInt(perPage));
     })
     .then((result) => {
-      const forLoop = async (_) => {
-        let newData = [];
-
-        for (let j = 0; j < result.length; j++) {
-          result[j].password = " ";
-          newData.push(result[j]);
-        }
-
-        res.status(200).send({
-          status: "success",
-          message: "Find All successfully",
-          data: newData,
-          total_data: totalItems,
-          data_perPage: perPage,
-          current_page: currentPage,
-          total_page:
-            Math.ceil(totalItems / perPage) == 0
-              ? currentPage
-              : Math.ceil(totalItems / perPage),
-        });
-      };
-
-      forLoop();
+      res.status(200).send({
+        status: "success",
+        message: "Find All successfully",
+        data: result,
+        total_data: totalItems,
+        data_perPage: perPage,
+        current_page: currentPage,
+        total_page:
+          Math.ceil(totalItems / perPage) == 0
+            ? currentPage
+            : Math.ceil(totalItems / perPage),
+      });
     })
     .catch((err) => {
       res.status(500).send({
