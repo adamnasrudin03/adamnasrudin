@@ -20,7 +20,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"account_number\": \"11032021\",\n    \"identity_number\": \"3275060309090099199\",\n    \"username\": \"adamnasrudin\",\n    \"email_address\": \"adamnasrudi1n@gmail.com\",\n    \"password\": \"password\"\n}"
+							"raw": "{\n    \"account_number\": \"11032021000001\",\n    \"identity_number\": \"327506030909002121\",\n    \"username\": \"adamcodeid\",\n    \"email_address\": \"adamcodeid@gmail.com\",\n    \"password\": \"password\"\n}"
 						},
 						"url": {
 							"raw": "https://adamnasrudin.herokuapp.com/api/v1/auth/register",
@@ -167,7 +167,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://adamnasrudin.herokuapp.com/\\/api/v1/users/60497c843ddd49373cbf924e/delete",
+					"raw": "https://adamnasrudin.herokuapp.com/api/v1/users/6049bfee0b823c001518ff3b/delete",
 					"protocol": "https",
 					"host": [
 						"adamnasrudin",
@@ -175,12 +175,10 @@
 						"com"
 					],
 					"path": [
-						"",
-						"",
 						"api",
 						"v1",
 						"users",
-						"60497c843ddd49373cbf924e",
+						"6049bfee0b823c001518ff3b",
 						"delete"
 					]
 				},
