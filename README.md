@@ -99,14 +99,47 @@ params :
 ```json
 Response:
 {
-    "meta": {
-        "message": "Avatar successfuly uploaded",
-        "code": 200,
-        "status": "success"
-    },
-    "data": {
-        "is_uploaded": true
-    }
+    "status": "success",
+    "message": "Find All successfully",
+    "data": [
+        {
+            "_id": "6049a8bc48b67100153203ff",
+            "accountNumber": "11032021",
+            "identityNumber": "3275060309090099199",
+            "userName": "adamnasrudin",
+            "emailAddress": "adamnasrudin@gmail.com",
+            "password": " ",
+            "createdAt": "2021-03-11T05:21:00.095Z",
+            "updatedAt": "2021-03-11T05:21:00.095Z",
+            "__v": 0
+        },
+        {
+            "_id": "6049bfee0b823c001518ff3b",
+            "accountNumber": "1233",
+            "identityNumber": "327s506",
+            "userName": "adamnasrudin",
+            "emailAddress": "adamnasrudi1n@gmail.com",
+            "password": " ",
+            "createdAt": "2021-03-11T06:59:58.673Z",
+            "updatedAt": "2021-03-11T07:36:05.650Z",
+            "__v": 0
+        },
+        {
+            "_id": "6049e8c2b9c3a2001569b2b0",
+            "accountNumber": "11032021000001",
+            "identityNumber": "327506030909002121",
+            "userName": "adamcodeid",
+            "emailAddress": "adamcodeid@gmail.com",
+            "password": " ",
+            "createdAt": "2021-03-11T09:54:10.335Z",
+            "updatedAt": "2021-03-11T09:54:10.335Z",
+            "__v": 0
+        }
+    ],
+    "total_data": 3,
+    "data_perPage": 5,
+    "current_page": 1,
+    "total_page": 1
 }
 ```
 
