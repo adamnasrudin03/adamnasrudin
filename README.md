@@ -1,3 +1,31 @@
+### Testing with postman
+
+```
+import the file in Postman located at ./export/heroku backend_test.postman_collection.json
+```
+
+### Link Dev with heroku
+
+```
+GROUP: Authentication
+[1] - Register
+[POST] : https://adamnasrudin.herokuapp.com/api/v1/auth/register
+[2] - Login
+[POST] : https://adamnasrudin.herokuapp.com/api/v1/auth/login
+
+
+GROUP: User
+[1] - List Users
+[GET] : https://adamnasrudin.herokuapp.com/api/v1/users
+[2] - Detail User
+[GET] : https://adamnasrudin.herokuapp.com/api/v1/users/:id
+[3] - Update User
+[PUT] : https://adamnasrudin.herokuapp.com/api/v1/users/:id/update
+[4] - Delete User
+[DELETE] : https://adamnasrudin.herokuapp.com/api/v1/users/:id/delete
+
+```
+
 # Api Spec
 
 ### GROUP: Authentication
